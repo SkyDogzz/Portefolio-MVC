@@ -21,6 +21,9 @@
                 <li><a href="/about">A propos</a></li>
                 <li><a href="/project">Projets</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == true) { ?>
+                    <li><a href="/admin/logout">Déconnexion</a></li>
+                <?php } ?>
             </ul>
         </nav>
     </header>
