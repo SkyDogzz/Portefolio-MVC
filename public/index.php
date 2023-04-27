@@ -12,8 +12,6 @@ $url_parts = array_filter($url_parts);
 $controller_name = 'home';
 $action_name = 'index';
 
-var_dump($url_parts);
-
 // Récupère le nom du contrôleur à partir du premier élément de l'URL
 if (isset($url_parts[1])) {
     $controller_name = $url_parts[1];
@@ -23,8 +21,6 @@ if (isset($url_parts[1])) {
 if (isset($url_parts[2])) {
     $action_name = $url_parts[2];
 }
-
-var_dump($controller_name, $action_name);
 
 // Ajoute le préfixe 'Controller' au nom du contrôleur et crée l'instance du contrôleur correspondant
 $controller_class = '\App\Controllers\\' . ucfirst($controller_name) . 'Controller';
