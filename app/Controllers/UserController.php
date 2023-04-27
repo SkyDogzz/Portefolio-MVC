@@ -8,6 +8,8 @@ class UserController
 {
     public function index()
     {
+        $user = new User();
+        
         echo 'User controller';
     }
 }
