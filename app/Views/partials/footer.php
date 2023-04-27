@@ -1,3 +1,7 @@
+</body>
+
+</html>
+
 <?php $debug = true; ?>
 
 <footer>
