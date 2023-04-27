@@ -36,11 +36,12 @@ class AdminController extends BaseController
             $email = $_POST['email'];
             $password = $_POST['password'];
 
-            $user = User::authenticate($email, $password);
+            $userModel = new User();
+            $user = $userModel->authenticate($email, $password);
 
             if ($user) {
                 // La connexion a réussi, enregistrer l'utilisateur dans une variable de session
-                $_SESSION['user_id'] = $user->getId();
+                $_SESSION['user_id'] = $user['id'];
 
                 // Rediriger vers le tableau de bord
                 $this->redirect('/admin/dashboard');
@@ -68,7 +69,8 @@ class AdminController extends BaseController
         // Vérifier si l'utilisateur est connecté
         if (isset($_SESSION['user_id'])) {
             $user_id = $_SESSION['user_id'];
-            $user = User::find($user_id);
+            $userModel = new User();
+            $user = $userModel->find($user_id);
 
             if ($user) {
                 return true;
