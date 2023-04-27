@@ -7,9 +7,9 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 1rem 2rem;
-    background-color: #f5f5f5;
-    border-bottom: #ccc 1px solid;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: $header-bg;
+    border-bottom: $header-border;
+    box-shadow: $header-shadow;
 
     .logo {
         display: flex;
@@ -31,19 +31,18 @@ header {
             li {
                 list-style: none;
                 margin: 0 1rem;
-                color: #fff;
                 cursor: pointer;
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: $header-nav-link-color;
 
                     &:visited {
-                        color: black;
+                        color: $header-nav-link-color;
                     }
 
                     &:hover {
-                        color: #ccc;
+                        color: $header-nav-link-color-hover;
                     }
 
                 }
