@@ -12,4 +12,9 @@ class UserController
         
         echo 'User controller';
     }
+
+    public function admin()
+    {
+        echo 'Admin connexion';
+    }
 }
