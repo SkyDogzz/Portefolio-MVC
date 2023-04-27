@@ -25,7 +25,7 @@ class AdminController extends BaseController
         }
 
         // Afficher le tableau de bord
-        echo 'Dashboard';
+        $this->renderView('admin/dashboard');
     }
 
     public function login()
