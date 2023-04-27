@@ -42,6 +42,7 @@ class AdminController extends BaseController
             if ($user) {
                 // La connexion a réussi, enregistrer l'utilisateur dans une variable de session
                 $_SESSION['user_id'] = $user['id'];
+                $_SESSION['is_admin'] = $user['is_admin'];
 
                 // Rediriger vers le tableau de bord
                 $this->redirect('/admin/dashboard');
