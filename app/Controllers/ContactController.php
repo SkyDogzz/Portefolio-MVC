@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Contact;
+
 class ContactController extends BaseController
 {
 
@@ -16,7 +18,13 @@ class ContactController extends BaseController
             $subject = $_POST['subject'];
             $message = $_POST['message'];
 
-            // TODO: Traitement et enregistrement du message de contact
+            $contactModel = new Contact();
+            $contactModel->save([
+                'name' => $name,
+                'email' => $email,
+                'subject' => $subject,
+                'message' => $message
+            ]);
 
             // Rediriger vers la page de confirmation
             $this->redirect('/contact/confirmation');
