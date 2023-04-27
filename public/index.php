@@ -24,7 +24,13 @@ if (isset($url_parts[2])) {
 
 // Ajoute le préfixe 'Controller' au nom du contrôleur et crée l'instance du contrôleur correspondant
 $controller_class = '\App\Controllers\\' . ucfirst($controller_name) . 'Controller';
-$controller = new $controller_class();
+if (class_exists($controller_class)) {
+    $controller = new $controller_class();
+} else {
+    header('HTTP/1.1 404 Not Found');
+    echo '404 Not Found, controller not found';
+    exit;
+}
 
 // Appelle la méthode correspondant à l'action
 $action = $action_name ;
@@ -32,5 +38,5 @@ if (method_exists($controller, $action)) {
     $controller->$action();
 } else {    
     header('HTTP/1.1 404 Not Found');
-    echo '404 Not Found';
+    echo '404 Not Found, action not found';
 }
