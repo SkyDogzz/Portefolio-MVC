@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once '../vendor/autoload.php';
 
 // Découpe l'URL en utilisant le slash (/) comme séparateur
