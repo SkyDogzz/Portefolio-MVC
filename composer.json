@@ -1,0 +1,15 @@
+{
+    "name": "ubuntu/html",
+    "autoload": {
+        "psr-4": {
+            "Ubuntu\\Html\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SkyDogzz",
+            "email": "thomas.stephan@live.fr"
+        }
+    ],
+    "require": {}
+}
