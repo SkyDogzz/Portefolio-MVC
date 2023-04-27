@@ -2,7 +2,7 @@
     "name": "ubuntu/html",
     "autoload": {
         "psr-4": {
-            "Ubuntu\\Html\\": "src/"
+            "App\\": "app/"
         }
     },
     "authors": [
