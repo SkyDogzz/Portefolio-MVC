@@ -1,0 +1,20 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/sass:public/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyDogzz/Portefolio-MVC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkyDogzz/Portefolio-MVC/issues"
+  },
+  "homepage": "https://github.com/SkyDogzz/Portefolio-MVC#readme"
+}
