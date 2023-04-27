@@ -20,7 +20,7 @@ class BaseController
         require __DIR__ . '/../Views/layout.php';
     }
     
-    private function redirect(string $url)
+    protected function redirect(string $url)
     {
         header('Location: ' . $url);
         exit;
