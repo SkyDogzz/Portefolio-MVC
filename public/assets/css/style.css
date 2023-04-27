@@ -1,9 +1,12 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* variable in scss */
 header {
   position: fixed;
   width: 100%;
@@ -47,7 +50,7 @@ header nav ul li a:hover {
 }
 
 .content {
-  margin-top: calc(2rem + 1px + 50px);
+  padding-top: calc(2rem + 1px + 50px);
 }
 
 /*# sourceMappingURL=style.css.map */
