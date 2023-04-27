@@ -25,4 +25,9 @@ class ContactController extends BaseController
         // Afficher le formulaire de contact
         $this->renderView('contact/index');
     }
+
+    public function confirmation()
+    {
+        $this->renderView('contact/confirmation');
+    }
 }
