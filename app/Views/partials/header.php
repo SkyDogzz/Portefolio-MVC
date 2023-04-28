@@ -27,4 +27,4 @@
             </ul>
         </nav>
     </header>
-    <div class="content">
+    <div class="content page-<?php echo ($_GET['route'] == "") ? "index" : str_replace("/", "-", trim($_GET['route'], "/")) ?>">
