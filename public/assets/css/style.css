@@ -63,6 +63,19 @@ header nav ul li a:hover {
   padding-top: calc(2rem + 1px + 50px);
 }
 
+.button-download {
+  color: #006c9e;
+  border: 3px solid #006c9e;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.button-download:hover {
+  background-color: #006c9e;
+  color: white;
+}
+
 .content.page-home a.view-cv {
   display: flex;
   justify-content: center;
