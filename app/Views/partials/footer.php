@@ -6,7 +6,7 @@
 <?php $debug = true; ?>
 
 <footer>
-    <h2>Me contactez</h2>
+    <h2>Me contacter</h2>
     <form action="/contact" method="post">
         <div>
             <label for="name">Nom</label>
