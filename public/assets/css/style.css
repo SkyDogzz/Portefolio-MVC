@@ -86,6 +86,31 @@ footer {
   color: white;
 }
 
+form {
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form .input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+form .input-container input.normal {
+  border: 1px solid #006c9e;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+form .input-container textarea {
+  border: 1px solid #006c9e;
+  border-radius: 5px;
+  padding: 0.5rem;
+  resize: vertical;
+}
+form button {
+  width: 100%;
+}
+
 .content.page-home a.view-cv {
   display: flex;
   justify-content: center;

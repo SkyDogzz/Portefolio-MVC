@@ -1,0 +1,32 @@
+form {
+    width: 80vw;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+        input{
+
+            &.normal{
+                border: 1px solid #006c9e;
+                border-radius: 5px      ;
+                padding: 0.5rem;
+            }
+
+        }
+
+        textarea {
+            border: 1px solid #006c9e;
+            border-radius: 5px;
+            padding: 0.5rem;
+            resize: vertical;
+        }
+    }
+
+    button {
+        width: 100%;
+    }
+}
