@@ -1,3 +1,5 @@
+/* typography variables */
+/* header variables */
 *,
 *::before,
 *::after {
@@ -6,7 +8,15 @@
   padding: 0;
 }
 
-/* variable in scss */
+h1 {
+  font-size: 2rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 header {
   position: fixed;
   width: 100%;
