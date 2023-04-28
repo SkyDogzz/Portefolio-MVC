@@ -1,5 +1,5 @@
 <h1>Mon CV</h1>
-<a href="public/images/Thomas_STEPHAN_Resume.png" target="_blank">
+<a class="view-cv" href="public/images/Thomas_STEPHAN_Resume.png" target="_blank">
     <img src="public/images/Thomas_STEPHAN_Resume.png" alt="CV Thomas Stephan">
 </a>
 <p>

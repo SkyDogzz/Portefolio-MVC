@@ -63,11 +63,11 @@ header nav ul li a:hover {
   padding-top: calc(2rem + 1px + 50px);
 }
 
-.content.page-home a {
+.content.page-home a.view-cv {
   display: flex;
   justify-content: center;
 }
-.content.page-home a img {
+.content.page-home a.view-cv img {
   width: 60vw;
 }
 
