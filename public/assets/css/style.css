@@ -130,4 +130,13 @@ form button {
   gap: 4rem;
 }
 
+.page-about .description-container {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+.page-about .description-container p {
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
