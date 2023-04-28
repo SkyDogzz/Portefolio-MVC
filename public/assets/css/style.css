@@ -63,4 +63,12 @@ header nav ul li a:hover {
   padding-top: calc(2rem + 1px + 50px);
 }
 
+.content.page-home a {
+  display: flex;
+  justify-content: center;
+}
+.content.page-home a img {
+  width: 60vw;
+}
+
 /*# sourceMappingURL=style.css.map */
