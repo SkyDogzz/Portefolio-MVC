@@ -83,5 +83,11 @@ header nav ul li a:hover {
 .content.page-home a.view-cv img {
   width: 60vw;
 }
+.content.page-home .button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 4rem;
+}
 
 /*# sourceMappingURL=style.css.map */
