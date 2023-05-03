@@ -23,6 +23,10 @@ class DBModel
         
         $this->db = new PDO("mysql:host=$host;dbname=$name", $user, $password);
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        //comment ne pas recreer une instance avec un Singleton
+        // $this->db = DB::getInstance();
+        
     }
 
     public function all()

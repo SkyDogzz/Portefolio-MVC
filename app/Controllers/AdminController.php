@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\Contact;
 use App\Models\User;
 
 class AdminController extends BaseController
@@ -24,8 +25,13 @@ class AdminController extends BaseController
             $this->redirect('/admin/login');
         }
 
+        $contactModel = new Contact();
+        $contacts = $contactModel->getContact();
+
         // Afficher le tableau de bord
-        $this->renderView('admin/dashboard');
+        $this->renderView('admin/dashboard', [
+            'contacts' => $contacts,
+        ]);
     }
 
     public function login()
