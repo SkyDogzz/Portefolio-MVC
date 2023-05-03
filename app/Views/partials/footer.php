@@ -9,23 +9,19 @@
     <h2>Me contacter</h2>
     <form action="/contact" method="post">
         <div class="input-container">
-            <label for="name">Nom</label>
-            <input class="normal" type="text" id="name" name="name" required>
+            <input class="normal" type="text" id="name" name="name" placeholder="Nom"required>
         </div>
 
         <div class="input-container">
-            <label for="email">Adresse e-mail</label>
-            <input class="normal" type="email" id="email" name="email" required>
+            <input class="normal" type="email" id="email" name="email" placeholder="Addresse email"required>
         </div>
 
         <div class="input-container">
-            <label for="subject">Objet</label>
-            <input class="normal" type="text" id="subject" name="subject" required>
+            <input class="normal" type="text" id="subject" name="subject" placeholder="Objet" required>
         </div>
 
         <div class="input-container">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required rows="8"></textarea>
+            <textarea id="message" name="message" required rows="8" placeholder="Message"></textarea>
         </div>
 
         <button type="submit">Envoyer</button>

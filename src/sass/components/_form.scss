@@ -1,32 +1,55 @@
+$form-width: 80vw;
+$form-max-width: 600px;
+$input-border-color: #006c9e;
+$input-border-radius: 5px;
+$input-padding: 0.75rem 1rem;
+
 form {
-    width: 80vw;
-    max-width: 600px;
-    margin: 0 auto;
+  width: $form-width;
+  max-width: $form-max-width;
+  margin: 0 auto;
 
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0;
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
 
-        input{
+    input, textarea {
+      border: 1px solid $input-border-color;
+      border-radius: $input-border-radius;
+      padding: $input-padding;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #fff;
 
-            &.normal{
-                border: 1px solid #006c9e;
-                border-radius: 5px      ;
-                padding: 0.5rem;
-            }
-
-        }
-
-        textarea {
-            border: 1px solid #006c9e;
-            border-radius: 5px;
-            padding: 0.5rem;
-            resize: vertical;
-        }
+      &:focus {
+        outline: none;
+        border: 2px solid $input-border-color;
+        border-radius: $input-border-radius;
+        padding: $input-padding;
+      }
     }
 
-    button {
-        width: 100%;
+    textarea {
+      resize: vertical;
+      min-height: 8rem;
     }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: $input-padding;
+    border-radius: $input-border-radius;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: $input-border-color;
+    border: none;
+
+    &:hover, &:focus {
+      background-color: darken($input-border-color, 10%);
+      cursor: pointer;
+    }
+  }
 }
